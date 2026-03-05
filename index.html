@@ -1,0 +1,197 @@
+<style>
+  .product-details {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .product-details h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 40px 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .product-details .note {
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+
+  /* Estilos da Tabela com distinção em baixo contraste */
+  .size-chart {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  .size-chart th {
+    background-color: #f4f4f4;
+    padding: 14px;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 2px solid #eaeaea;
+  }
+  .size-chart td {
+    padding: 12px 10px;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  /* Linhas alternadas com contraste elegante */
+  .size-chart tr:nth-child(even) td {
+    background-color: #fafafa;
+  }
+
+  /* Estilos da Lavagem com Grid Ordenado */
+  .care-instructions {
+    display: grid;
+    /* Cria colunas simétricas automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    justify-content: center;
+  }
+  .care-badge {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #555;
+    transition: all 0.2s ease;
+  }
+  .care-badge:hover {
+    border-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  .care-badge img {
+    max-width: 22px;
+    flex-shrink: 0;
+  }
+  .care-badge em {
+    font-style: normal;
+  }
+</style>
+
+<section class="product-details">
+  <h3>Tabela de medidas</h3>
+  <div class="note">
+    <em
+      >*Todas as medidas estão em centímetros. Ex: Busto 100, Cintura 77 e
+      Quadril 108 veste M.</em
+    >
+  </div>
+
+  <table class="size-chart">
+    <thead>
+      <tr>
+        <th>Tamanho</th>
+        <th>Busto</th>
+        <th>Cintura</th>
+        <th>Quadril</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PP</td>
+        <td>85 a 90</td>
+        <td>65 a 70</td>
+        <td>91 a 96</td>
+      </tr>
+      <tr>
+        <td>P</td>
+        <td>91 a 96</td>
+        <td>71 a 76</td>
+        <td>97 a 102</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>97 a 102</td>
+        <td>77 a 82</td>
+        <td>103 a 108</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>103 a 108</td>
+        <td>83 a 88</td>
+        <td>109 a 114</td>
+      </tr>
+      <tr>
+        <td>GG</td>
+        <td>109 a 114</td>
+        <td>89 a 94</td>
+        <td>115 a 120</td>
+      </tr>
+      <tr>
+        <td>G1</td>
+        <td>115 a 120</td>
+        <td>95 a 100</td>
+        <td>121 a 126</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Instruções de lavagem</h3>
+  <div class="care-instructions">
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczNSiW.jpg"
+        alt="Lavagem manual"
+      />
+      <em>Somente lavagem manual</em>
+    </div>
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczOCVv.jpg"
+        alt="Permitido alvejamento"
+      />
+      <em>Permitido o alvejamento</em>
+    </div>
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczNdD4.jpg"
+        alt="Não usar secador rotativo"
+      />
+      <em>Não usar secador rotativo</em>
+    </div>
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczP3X5.jpg"
+        alt="Secagem na horizontal"
+      />
+      <em>Secagem na horizontal</em>
+    </div>
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczPirE.jpg"
+        alt="Secar à sombra"
+      />
+      <em>Secar à sombra</em>
+    </div>
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczPAsI.jpg"
+        alt="Passar máx 110°C"
+      />
+      <em>Passar máx 110°C</em>
+    </div>
+    <div class="care-badge">
+      <img
+        src="https://pub-99770f460d6d4fe0b1d15b3ce6f4322d.r2.dev/produtos_bling/temp_AP1GczP5v8.jpg"
+        alt="Lavagem à seco"
+      />
+      <em>Lavagem à seco restrita</em>
+    </div>
+  </div>
+</section>
